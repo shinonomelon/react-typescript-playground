@@ -1,0 +1,4 @@
+// github copilotの 自動補完が出ないようにしたい
+{
+  "copilot.enabled": false
+}

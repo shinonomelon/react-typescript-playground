@@ -12,3 +12,27 @@ export const countryNames: CountryNames = {
   US: "United States",
   CN: "China",
 };
+
+export type Obj<K extends string | number, T> = {
+  [P in K]: T;
+};
+
+export const obj1: Obj<"name" | "age", string> = {
+  name: "Taro",
+  age: "20",
+};
+
+type Foo = {
+  id: number;
+  name: string;
+};
+
+// FlagsはFooのプロパティを全てOptionalにする
+export type Flags = { [K in keyof Foo]?: Foo[K] };
+
+// Utility TypesのPartialを作る
+export type Partial<T> = {
+  [K in keyof T]?: T[K];
+};
+
+export type PartialFoo = Partial<Foo>;

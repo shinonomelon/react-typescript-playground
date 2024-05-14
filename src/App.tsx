@@ -1,10 +1,10 @@
 import "./App.css";
-import { TodoApp } from "./sample_01/TodoApp";
+import { ModalApp } from "./sample_03/ModalApp";
 
 function App() {
   return (
     <>
-      <TodoApp />
+      <ModalApp />
     </>
   );
 }

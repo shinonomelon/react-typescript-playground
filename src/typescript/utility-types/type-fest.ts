@@ -1,4 +1,4 @@
-import { PartialDeep } from "type-fest";
+// import { PartialDeep } from "type-fest";
 
 type NestedPartial<T> = {
   [K in keyof T]?: T[K] extends Array<infer R>
@@ -23,4 +23,4 @@ const optionalFoo: optionalFoo = {
   baz: {},
 };
 
-type NestedOptionalFoo = PartialDeep<Foo>;
+// type NestedOptionalFoo = PartialDeep<Foo>;

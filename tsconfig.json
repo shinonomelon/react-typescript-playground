@@ -12,6 +12,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
+
+    // reactは明示的にReactをインポートする必要がある
+    // react-jsxはReactのインポートを省略できる
     "jsx": "react-jsx",
 
     /* Linting */

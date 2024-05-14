@@ -36,11 +36,6 @@ const apple: Member = {
 
 apple.isHuman = false; //Type 'string' is not assignable to type 'boolean'
 
-type Color = "白" | "黒" | "赤" | "緑";
-
-let color: Color = "白";
-color = "青"; //Type '"青"' is not assignable to type 'Color'.
-
 //
 
 // 3. 型の拡張
